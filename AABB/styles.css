@@ -1,0 +1,27 @@
+body {
+    position: relative;
+    height: 50vh;
+    border: 1px solid black;
+}
+
+.bounding-box {
+    position: absolute;
+}
+
+.red {
+    background: red;
+}
+
+.blue {
+    background: blue;
+}
+
+.status-container {
+    border-top: 1px solid black;
+    width: 100%;
+    background: #f0f0f0;
+    color: #000;
+    position: absolute;
+    bottom: 0;
+    font-size: 30px;
+}
