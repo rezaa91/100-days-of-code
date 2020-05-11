@@ -1,0 +1,48 @@
+body {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+}
+
+#playContainer {
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid gray;
+    display: flex;
+}
+
+#textContainer {
+    flex: 10;
+    font-size: 32px;
+    color: blue;
+}
+
+#play {
+    flex: 1;
+    color: green;
+    background: #ebebeb;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 3px;
+    width: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 1px gray;
+}
+
+#play:hover {
+    background: green;
+    color: #ebebeb;
+    box-shadow: 0 0 0;
+}
+
+#outcome {
+    margin-top: 15px;
+    color: gray;
+    letter-spacing: 1.6px;
+    text-align: center;
+}
