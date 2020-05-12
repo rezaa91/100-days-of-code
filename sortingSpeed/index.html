@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Speed</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="input-container">
+            <div class="desc">See how long (ms) it takes to sort an array of random numbers between 1 and 10000</div>
+            <label>array length (max 99,999):</label>
+            <input type="text" placeholder="no. of elements to sort" name="total" id="total" maxLength="5" />
+            <button id="play">Play</button>
+            <button id="reset">Reset</button>
+            <div id="validation"></div>
+        </div>
+        <div class="stats-container">
+            <div class="bubble-container">
+                <div class="title">BUBBLE SORT</div>
+                <div class="timer" id="bubbleTimer">00</div>
+            </div>
+            <div class="merge-container">
+                <div class="title">MERGE SORT</div>
+                <div class="timer" id="mergeTimer">00</div>
+            </div>
+        </div>
+        <div id="status"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
