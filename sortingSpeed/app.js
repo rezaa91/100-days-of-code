@@ -131,3 +131,7 @@ function reset() {
 
 playBtn.addEventListener('click', runScript);
 resetBtn.addEventListener('click', reset);
+
+// TEST
+// 1. implement quick sort and see what the difference is
+// 2. use javascripts sort method and compare
