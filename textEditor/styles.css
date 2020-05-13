@@ -1,0 +1,80 @@
+.text-editor-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+    height: 300px;
+    justify-content: space-between;
+}
+
+.text-editor-buttons {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-bottom: 5px;
+}
+
+.text-editor-buttons button {
+    background: coral;
+}
+
+.text-editor-text-area {
+    width: 100%;
+    flex:5;
+}
+
+.text-editor-options {
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding-bottom: 5px;
+}
+
+.text-editor-options button {
+    background: gray;
+}
+
+textarea {
+    width: inherit;
+    height: 100%;
+    resize: none;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+button {
+    padding: 8px 12px;
+    color: white;
+    border: 0;
+    margin-left: 2px;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+
+}
+
+.title {
+    font-size: 32px;
+    letter-spacing: 2px;
+    color: grey;
+    font-family: sans-serif;
+    margin-bottom: 40px;
+}
+
+#save {
+    font-weight: 600;
+}
+
+#output {
+    margin-top: 30px;
+    text-align: center;
+    font-family: monospace;
+    font-size: 28px;
+}

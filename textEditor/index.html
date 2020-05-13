@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Editor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">BASIC TEXT EDITOR</div>
+        <div class="text-editor-container">
+            <div class="text-editor-buttons">
+                <button id="bold"><b>b</b></button>
+                <button id="italic"><i>i</i></button>
+                <button id="underline"><u>u</u></button>
+            </div>
+            <div class="text-editor-text-area">
+                <textarea id="textBox" placeholder="type text here..."></textarea>
+            </div>
+            <div class="text-editor-options">
+                <button id="save">save</button>
+                <button title="undo" id="undo"><<</button>
+                <button title="redo" id="redo">>></button>
+            </div>
+        </div>
+        <div id="output"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
