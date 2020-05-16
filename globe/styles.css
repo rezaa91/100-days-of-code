@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    animation: day 20s infinite;
+}
+
+.globe {
+    background-image: url("globe.jpg");
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-size: cover;
+    box-shadow: -20px -20px 70px black inset;
+    animation: rotation 20s linear alternate infinite;
+}
+
+@keyframes rotation {
+    100%{ background-position: 100%; }
+    50%{ box-shadow: -100px -20px 70px black inset;}
+}
+
+@keyframes day {
+    50%{ background: #1c1c1c; }
+}
