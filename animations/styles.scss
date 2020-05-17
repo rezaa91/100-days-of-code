@@ -1,0 +1,167 @@
+body {
+    background: #333;
+}
+
+.bike {
+    width: 500px;
+    height: 300px;
+    border: 1px solid #333;
+    position: relative;
+    margin: auto;
+    top: 180px;
+}
+
+.wheel {
+    width: 150px;
+    height: 150px;
+    animation-name: wheel;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    border: 10px solid black;
+    animation-timing-function: linear;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+
+.spoke {
+    background: silver;
+    width: 2px;
+    height: 150px;
+    transform-origin: center;
+}
+
+.spoke-one {
+    transform: rotateZ(0deg);
+}
+
+.spoke-two {
+    transform: rotateZ(45deg);
+}
+
+.spoke-three {
+    transform: rotateZ(90deg);
+}
+
+.spoke-four {
+    transform: rotateZ(135deg);
+}
+
+@keyframes wheel {
+    0% { transform: rotateZ(0deg); }
+    50% { transform: rotateZ(180deg); }
+    100% {transform: rotateZ(360deg); }
+}
+
+.back-wheel {
+    bottom: 0px;
+    left: 0px;
+}
+
+.front-wheel {
+    bottom: 0px;
+    right: 0px;
+}
+
+.seat {
+    position: absolute;
+    transform: rotateZ(-10deg);
+    width: 55px;
+    height: 16px;
+    border-radius: 50%;
+    background: darkgray;
+    margin: 15% 35%;
+    z-index: 1;
+}
+
+.handles {
+    width: 40px;
+    height: 9px;
+    border-radius: 30%;
+    position: absolute;
+    margin: 12% 78%;
+    background: #595e44;
+    z-index: 1;
+}
+
+.seat-frame {
+    position: absolute;
+    transform: rotateZ(-10deg);
+    width: 8px;
+    height: 118px;
+    background: #8f701a;
+    margin: 18% 42%;
+}
+
+.top-frame {
+    position: absolute;
+    transform: rotateZ(-5deg);
+    width: 188px;
+    height: 10px;
+    background: #8f701a;
+    margin: 22% 42%;
+}
+
+.bottom-frame {
+    position: absolute;
+    width: 193px;
+    height: 10px;
+    background: #8f701a;
+    margin: 30% 43%;
+    transform: rotateZ(-28deg);
+}
+
+.back-frame-1 {
+    position: absolute;
+    background: #8f701a;
+    width: 160px;
+    height: 7px;
+    transform: rotateZ(-35deg);
+    margin: 33% 14%;
+}
+
+.back-frame-2 {
+    position: absolute;
+    background: #8f701a;
+    width: 137px;
+    height: 7px;
+    margin: 41% 18%;
+    transform: rotateZ(-4deg);
+}
+
+.front-frame {
+    position: absolute;
+    background: #8f701a;
+    width: 8px;
+    height: 110px;
+    margin: 22% 80%;
+    transform: rotateZ(-10deg);
+}
+
+.pedals {
+    width: 30px;
+    height: 9px;
+    background: black;
+    margin: 42%;
+    animation-name: pedal-rotate;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    border-radius: 50%;
+}
+
+@keyframes pedal-rotate {
+    25% { margin: 45% 42%; }
+    50% { margin: 45% 40% }
+    75% { margin: 42% 40%; }
+}
+
+.handle-frame {
+    position: absolute;
+    height: 60px;
+    width: 7px;
+    background: #8f701a;
+    margin: 12% 80%;
+    transform: rotateZ(30deg);
+}
