@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="kanban-board">
+            <div class="add-card-container">
+                <button id="add">+</button>
+            </div>
+            <div class="columns">
+                <div id="backlog" class="backlog list">
+                    <div class="title">backlog</div>
+                    <div id="cardContainer"></div>
+                </div>
+                <div id="inProgress" class="in-progress list">
+                    <div class="title">in progress</div>
+                </div>
+                <div id="done" class="done list">
+                    <div class="title">done</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
