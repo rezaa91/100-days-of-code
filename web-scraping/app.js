@@ -13,12 +13,15 @@ axios.get(url)
     .then((data) => {
         const $ = cheerio.load(data);
         const products = $('article.product');
+        console.log(`found ${products.length} products`);
         products.each((i, product) => {
             const title = $(product).find('span[data-product="name"]').text();
 
             if (title.toLowerCase() !== wantedItem) {
                 return;
             }
+
+            console.log('match found');
 
             const price = parseInt($(product).find('.amounts').text().trim().substring(1));
             const inStock = $(product).find('.email-when-back').length === 0;
