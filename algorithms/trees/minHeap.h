@@ -41,11 +41,11 @@ public:
         int right = this->right(i);
         int smallest = i;
 
-        if (heap[smallest] > heap[left]) {
+        if (left < heap.size() && heap[smallest] > heap[left]) {
             smallest = left;
         }
 
-        if (heap[smallest] > heap[right]) {
+        if (right < heap.size() && heap[smallest] > heap[right]) {
             smallest = right;
         }
 

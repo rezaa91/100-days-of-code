@@ -17,6 +17,12 @@ public:
 
     void push(int data)
     {
+        if (size == capacity) {
+            std::cerr << "capacity reached" << std::endl;
+
+            return;
+        }
+
         arr[size++] = data;
     }
 
@@ -35,5 +41,10 @@ public:
         for (int i = 0; i < size; i++) {
             std::cout << arr[i] << std::endl;
         }
+    }
+
+    ~Stack()
+    {
+        delete arr;
     }
 };
